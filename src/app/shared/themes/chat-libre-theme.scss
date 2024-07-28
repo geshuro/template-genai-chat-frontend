@@ -1,0 +1,88 @@
+$md-chatlibre-light: (
+  50: #e4e0f1,
+  100: #bbb3db,
+  200: #8d80c4,
+  300: #5f4dac,
+  400: #3d269a,
+  500: #1b0088,
+  600: #180080,
+  700: #140075,
+  800: #10006b,
+  900: #080058,
+  A100: #8d8aff,
+  A200: #5b57ff,
+  A400: #2a24ff,
+  A700: #110aff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #ffffff,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+
+$chatlibre-primary-light: mat.define-palette($md-chatlibre-light);
+$chatlibre-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$chatlibre-light-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $chatlibre-primary-light,
+      accent: $chatlibre-accent,
+    ),
+  )
+);
+
+$md-chatlibre-dark: (
+  50: #000000,
+  100: #000000,
+  200: #000000,
+  300: #ffffff,
+  400: #ffffff,
+  500: #ffffff,
+  600: #ffffff,
+  700: #ffffff,
+  800: #ffffff,
+  900: #ffffff,
+  A100: #000000,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #ffffff,
+  contrast: (
+    50: #e4e0f1,
+    100: #bbb3db,
+    200: #8d80c4,
+    300: #5f4dac,
+    400: #3d269a,
+    500: #1b0088,
+    600: #180080,
+    700: #140075,
+    800: #10006b,
+    900: #080058,
+    A100: #8d8aff,
+    A200: #5b57ff,
+    A400: #2a24ff,
+    A700: #110aff,
+  ),
+);
+
+$chatlibre-primary-dark: mat.define-palette($md-chatlibre-dark);
+
+$chatlibre-dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $chatlibre-primary-dark,
+      accent: $chatlibre-accent,
+    ),
+  )
+);

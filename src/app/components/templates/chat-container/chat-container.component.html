@@ -1,0 +1,28 @@
+<div id="chat-main-wrapper" [ngClass]="!history.opened ? 'closed' : 'opened'">
+  <app-selectors-top-chat
+    [itemsLeft]="chatInteractionService.baseKnowledgeList"
+    [itemsRight]="chatInteractionService.modelsList"
+    [itemsCenter]="airCrafts"
+    [viewLetf]="chatInteractionService.chatActivate?.value === 'RH+'"
+    [disabled]="activeChat"
+    [isVisibleSelectKnowledgebase]="true"
+    [isVisibleSelectEngine]="true">
+  </app-selectors-top-chat>
+  @if (activeChat) {
+    <app-chat-messages
+      [(messages)]="messages"
+      [isNewMessage]="isNewMessage"
+      [processing]="processing"
+      (loadComponent)="loadScrollElement($event)"></app-chat-messages>
+  }
+  @if (!activeChat) {
+    <app-zero-state-container
+      [showPromptExamples]="
+        showPromptExamples ?? false
+      "></app-zero-state-container>
+  }
+
+  <app-chat-input [processing]="processing"></app-chat-input>
+
+  <div class="latam-wings"></div>
+</div>

@@ -1,0 +1,129 @@
+@import '../../../../assets/styles/base/typography';
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 45px;
+  height: calc(65vh - var(--mat-toolbar-standard-height) * 2);
+  overflow: hidden;
+  overflow-y: hidden;
+  justify-content: space-between;
+}
+
+.button-chat {
+  height: 50px;
+}
+
+.title {
+  margin-top: 30px;
+  @extend .font-bold;
+  color: var(--color-text);
+  font-size: 12px;
+}
+
+.list:hover,
+.list:active {
+  overflow-y: auto;
+}
+
+.item-select {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 38px;
+  background-color: transparent;
+  margin-bottom: 10px;
+  color: var(--color-text);
+  border-radius: 10px;
+  border: 1px solid var(--color-text);
+  div {
+    img {
+      width: 18px;
+      height: 18px;
+    }
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      font-style: italic;
+    }
+  }
+  button {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--color-text);
+    @extend .font-regular;
+  }
+}
+
+#site-anchor {
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+}
+
+.icon-website {
+  content: var(--icon-website-anchor);
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.icon-settings {
+  content: var(--icon-help-settings);
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.icon-tour {
+  content: var(--icon-tour-header);
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.icon-help-chat {
+  content: var(--icon-help-chat-header);
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.icon-help {
+  content: var(--icon-help);
+  vertical-align: middle;
+  margin-right: 15px;
+  border-radius: 50%;
+  background: white;
+}
+
+.icon-update {
+  content: var(--icon-update-header);
+  vertical-align: middle;
+  margin-right: 20px;
+  margin-left: 5px;
+}
+
+.icon-report {
+  content: var(--icon-report-header);
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.btn-options-help {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.more-items {
+  color: var(--color-terciary-menu);
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1279px) {
+  .list {
+    overflow-y: auto;
+    height: calc(56vh - var(--mat-toolbar-standard-height) * 2);
+  }
+}

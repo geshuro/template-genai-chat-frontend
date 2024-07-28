@@ -1,0 +1,54 @@
+<div class="container-golden-set">
+  <div class="box-title">
+    <div
+      class="item-return"
+      (click)="backToMenu()"
+      (keyup)="onKeyup()"
+      aria-disabled="true">
+      <img class="icon-return" alt="icon-return" />
+      <p class="text-return">volver</p>
+    </div>
+    <div class="position-title">
+      <p class="text-title">Administación Golden Sets</p>
+    </div>
+  </div>
+  <div class="content-golden-set">
+    <div class="l-column">
+      <div class="box-document">
+        <img class="icon-uploud" alt="icon uploud" />
+        <div class="texts-upload">
+          <p class="text-upload">Arrastra o carga un documento</p>
+          <p class="sub-text-upload">Solo documentos Excel</p>
+          <button mat-raised-button color="primary">Cargar documento</button>
+        </div>
+      </div>
+      <!-- <button (click)="openModal()" mat-raised-button color="primary">
+        modal
+      </button> -->
+      <!-- <input type="file" /> -->
+      <div class="l-content-table">
+        <app-management-table
+          [itemsTable]="itemsTable"
+          [isGoldenSet]="true"></app-management-table>
+      </div>
+    </div>
+    <div class="line-border"></div>
+    <div class="r-column">
+      <div class="box-state">
+        <p class="title-state">Estado Golden set</p>
+        <div class="result-state">
+          <img class="icon-state" alt="icon state" />
+          <p class="text-result-state">
+            Porcentaje de acierto:
+            <span class="result-state-blue">70%</span>
+          </p>
+        </div>
+      </div>
+      <div class="r-content-table">
+        <app-management-table
+          [itemsTable]="itemsTable"
+          [isGoldenSet]="false"></app-management-table>
+      </div>
+    </div>
+  </div>
+</div>

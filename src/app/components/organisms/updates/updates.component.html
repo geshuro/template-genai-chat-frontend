@@ -1,0 +1,20 @@
+<div id="main-container">
+  <div id="main-wrapper">
+    <div id="title-container">
+      <i class="icon-updates"></i>
+      <h2 class="main-title">{{ 'UPDATES_TITLE' | translate }}</h2>
+    </div>
+    <button mat-icon-button mat-dialog-close class="close-button">
+      <mat-icon>close</mat-icon>
+    </button>
+    <div id="updates-container">
+      @for (item of 'updates_list.update' | translate; track $index) {
+        <div class="update">
+          <h2 class="update-date">{{ item.date }}</h2>
+          <p>{{ item.description }}</p>
+          <div class="content" [innerHtml]="item.content"></div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

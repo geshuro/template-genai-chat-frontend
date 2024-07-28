@@ -1,0 +1,46 @@
+<div class="layout-container">
+  <app-header></app-header>
+  <mat-sidenav-container
+    autosize
+    scrollable="false"
+    class="layout-sidenav-container">
+    <mat-sidenav
+      #drawer
+      class="layout-sidenav"
+      [mode]="isMobile ? 'over' : 'side'"
+      [position]="'start'"
+      [opened]="isOpened">
+      <ng-content select="[sidenav-content]"></ng-content>
+      @if (drawer.opened && isMobile) {
+        <div class="sidenav-button-container-open">
+          <button
+            type="button"
+            mat-button
+            class="btn-sidebar"
+            (click)="drawer.toggle()">
+            <img class="btn-side-nav-left" alt="button-side-nav" />
+          </button>
+        </div>
+      }
+    </mat-sidenav>
+    <mat-sidenav-content class="layout-sidenav-content">
+      @if (drawer.opened && !isMobile) {
+        <div class="sidenav-button-container-open">
+          <button type="button" class="btn-sidebar" (click)="drawer.toggle()">
+            <img class="btn-side-nav-left" alt="button-side-nav" />
+          </button>
+        </div>
+      }
+      @if (!drawer.opened) {
+        <div class="sidenav-button-container-close">
+          <button type="button" class="btn-sidebar" (click)="drawer.toggle()">
+            <img class="btn-side-nav-right" alt="button-side-nav" />
+          </button>
+        </div>
+      }
+      <ng-content select="[main-content]"></ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <!-- <mat-toolbar class="layout-footer"></mat-toolbar> -->
+</div>
+<app-dialog-menu-mobile></app-dialog-menu-mobile>

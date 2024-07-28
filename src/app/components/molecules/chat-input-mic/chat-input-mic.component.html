@@ -1,0 +1,8 @@
+<button mat-icon-button *ngIf="listening$ | async; else mic" (click)="stop()">
+  <mat-icon class="soundwave">stop</mat-icon>
+</button>
+<ng-template #mic>
+  <button mat-icon-button (click)="start()">
+    <mat-icon id="speech-mic">mic</mat-icon>
+  </button>
+</ng-template>

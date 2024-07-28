@@ -1,0 +1,19 @@
+.gallery-small-image {
+  width: 100% !important;
+}
+
+.gallery-small-image:hover {
+  -moz-box-shadow: 10px 10px 50px #5c5b5b;
+  -webkit-box-shadow: 10px 10px 50px #5c5b5b;
+  box-shadow: 10px 10px 50px #5c5b5b;
+}
+
+mat-grid-tile {
+  transition: 0.3s;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+mat-grid-list {
+  width: 100%;
+}

@@ -1,0 +1,37 @@
+app-chat-container {
+  height: 100% !important;
+}
+
+#main-content {
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
+.sidenav-side {
+  height: 78vh;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  max-width: 270px;
+}
+
+.container-spinner {
+  border: 10px solid var(--color-border-spinner-loading);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: var(--color-background-spinner-loading);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loading-text {
+  margin-top: 20px;
+  color: var(--color-primary);
+  font-family: 'LATAM Sans Bold', sans-serif !important;
+  text-shadow: 0.1px 0.4px 0.5px var(--color-primary);
+  max-width: 400px;
+}

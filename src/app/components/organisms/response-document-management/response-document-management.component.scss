@@ -1,0 +1,31 @@
+@import 'src/assets/scss/main.scss';
+
+.content-response-document {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  .box-response-document {
+    width: 40%;
+    padding: 10px;
+    background-color: #f3f6fc;
+    border-radius: 10px;
+    height: 100px;
+    .title-response {
+      color: #1b0088;
+      font-size: 16px;
+      font-family: 'LATAM Sans bold', sans-serif;
+      margin-bottom: 0px;
+      padding-bottom: 10px;
+    }
+    .text-response {
+      color: #000000;
+      font-size: 16px;
+      margin-bottom: 0px;
+    }
+    .border-divider {
+      border-bottom: solid 1px lightgray;
+      width: 100%;
+    }
+  }
+}

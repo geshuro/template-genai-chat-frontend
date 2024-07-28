@@ -1,0 +1,66 @@
+<!-- 17-03-23 : Se agrega banner de alertas:
+  el valor "color" es el que define la clase css que se debe implementar.
+  se debe definir bajo qué evento se van a completar los campos (parametros para app-banner)
+-->
+@if (hasAlert) {
+  <app-banner title="Noticias y Novedades" color="background-green">
+  </app-banner>
+}
+
+<div class="container">
+  <h1 class="title">
+    @if (chatActivate?.label === 'RH+') {
+      {{ 'ZERO_STATE_TITLE' | translate }}
+      <img
+        class="logo-rhplus"
+        src="assets/pics/logo-rhplus.svg"
+        alt="logo-rhplus" />
+    } @else {
+      {{ 'ZERO_STATE_TITLE' | translate }}{{ chatActivate?.label ?? '' }}
+    }
+  </h1>
+  <!-- <h2
+    class="subtitle"
+    [innerHTML]="chatActivate?.subtitle ?? '' | translate"></h2> -->
+  @if (chatActivate?.showPromptExamples) {
+    <h2
+      class="subtitle"
+      [innerHTML]="
+        getSelectedKnowledgeBase?.description ?? chatActivate?.subtitle ?? ''
+          | translate
+      "></h2>
+  }
+  <app-selectors-top-chat
+    [itemsLeft]="interactionService.baseKnowledgeList"
+    [itemsRight]="interactionService.modelsList"
+    [itemsCenter]="airCrafts"
+    [viewLetf]="interactionService.chatActivate?.value === 'RH+'"
+    [isVisibleSelectKnowledgebase]="true"
+    [isVisibleSelectEngine]="true">
+  </app-selectors-top-chat>
+
+  @if (isShowed && chatActivate?.showPromptExamples) {
+    <div class="examplesContainer fadeIn">
+      @if (chatActivate?.loading) {
+        @for (prompt of itemsSkeleton; track prompt) {
+          <ngx-skeleton-loader
+            count="2"
+            [theme]="themeSkeleton"></ngx-skeleton-loader>
+        }
+      } @else {
+        @for (prompt of promptExamplesService; track prompt) {
+          <app-prompt-example [example]="prompt"> </app-prompt-example>
+        }
+      }
+    </div>
+
+    @if (chatActivate?.showDisclaimer) {
+      <div class="home-disclaimer-container fadeIn">
+        <mat-icon>info</mat-icon>
+        <p
+          class="home-disclaimer"
+          [innerHTML]="chatActivate!.textDisclaimer | translate"></p>
+      </div>
+    }
+  }
+</div>

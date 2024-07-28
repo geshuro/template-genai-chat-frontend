@@ -1,0 +1,81 @@
+<div id="login-main-wrapper">
+  <div id="left-container">
+    <div id="text-container">
+      <div class="title-wrapper">
+        <h1>{{ 'LABEL_WELCOME_LOGIN_1' | translate }}</h1>
+        @if (!isChatLibre) {
+          <img
+            src="assets/pics/logo-rhplus.svg"
+            alt=""
+            height="75px"
+            width="auto" />
+        } @else {
+          <img
+            src="assets/icons/assistant-avatar-libre.svg"
+            alt=""
+            height="75px"
+            width="auto" />
+        }
+      </div>
+
+      <p class="desktop-paragraph">
+        {{ 'LABEL_DESKTOP_PARAGRAPH' | translate }}
+      </p>
+      <p class="mobile-paragraph">{{ 'LABEL_MOBILE_PARAGRAPH' | translate }}</p>
+
+      <p class="mobile-bajada">{{ 'LABEL_MOBILE_BAJADA' | translate }}</p>
+      <!--   -->
+    </div>
+    <div id="illustration-container">
+      <img
+        src="assets/pics/illustration-login.png"
+        alt=""
+        class="illustration" />
+    </div>
+  </div>
+  <div id="right-container">
+    <div id="login-container">
+      <img alt="Logo LATAM" src="assets/pics/Logo-LATAM.svg" width="200px" />
+
+      <h2 style="margin-top: 20px; text-align: center">
+        {{ 'LABEL_WELCOME_LOGIN_2' | translate }}
+      </h2>
+      <button
+        style="margin: 10px auto 0; display: block"
+        type="button"
+        class="app_button"
+        mat-raised-button
+        (click)="login()">
+        {{ 'BUTTON_LOGIN' | translate }}
+      </button>
+    </div>
+
+    <div class="latam-wings"></div>
+  </div>
+
+  <div id="login-container-mobile">
+    <img
+      alt="Logo LATAM"
+      src="assets/pics/Logo-LATAM.png"
+      width="200px"
+      height="auto" />
+
+    <h2 style="margin-top: 20px; text-align: center">
+      {{ 'LABEL_WELCOME_LOGIN_2' | translate }}
+    </h2>
+    <button
+      style="display: block; margin: 0 auto"
+      type="button"
+      class="app_button"
+      mat-raised-button
+      (click)="login()">
+      {{ 'BUTTON_LOGIN' | translate }}
+    </button>
+
+    <div class="latam-wings"></div>
+  </div>
+</div>
+
+<div class="app_footer">
+  <app-footer></app-footer>
+</div>

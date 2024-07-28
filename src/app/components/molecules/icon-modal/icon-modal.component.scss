@@ -1,0 +1,59 @@
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  max-width: 500px;
+  min-width: 245px;
+  background-color: var(--color-background-secondary) !important;
+}
+
+.title {
+  align-self: start;
+  color: var(--color-text);
+  font-family: 'LATAM Sans Bold', sans-serif !important;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.emoji-button {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 25px;
+}
+
+.edit-pencil {
+  margin: -7px -48px 0px 0px;
+  width: 33px;
+  height: 28px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.button-container {
+  height: 48px;
+  display: flex;
+  margin-top: 30px;
+}
+
+.primary {
+  width: 118px;
+  margin-right: 30px;
+  height: 40px;
+}
+
+.secondary {
+  width: 118px;
+  height: 40px;
+}
+
+.emoji-box {
+  position: fixed;
+  z-index: 2;
+  bottom: 35px;
+}

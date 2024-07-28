@@ -1,0 +1,21 @@
+<div class="modal-container">
+  <div class="main-modal">
+    <div class="title-container">
+      <div class="title-modal">Eliminar documento</div>
+      <!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+      <!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+      <img
+        class="close-profile-modal"
+        alt="close-icon"
+        (click)="closeModal()" />
+    </div>
+    <div class="content-modal">
+      <img class="icon-attention" alt="icon-attention" />
+      <p class="content-text">¿estas seguro de eliminar este documento?</p>
+    </div>
+    <div class="butons-footer">
+      <button mat-raised-button class="btn-secondary">Cancelar</button>
+      <button mat-raised-button color="primary">Eliminar Documento</button>
+    </div>
+  </div>
+</div>

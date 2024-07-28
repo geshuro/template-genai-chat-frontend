@@ -1,0 +1,407 @@
+{
+  "TITLE_LOGIN": "Welcome, please do login",
+
+  "LABEL_WELCOME_LOGIN_1": "Welcome to RH+",
+  "LABEL_WELCOME_LOGIN_2": "Para acceder utiliza tu cuenta LATAM",
+
+  "LABEL_DESKTOP_PARAGRAPH": "Ask what you need, whenever you want",
+  "BUTTON_LOGIN": "Login",
+
+  "TITLE_NEW_LANGUAGE": "Change of language",
+  "NEW_LANGUAGE_SET": "The application is now in English",
+
+  "BUTTON_YES": "Yes",
+  "BUTTON_NO": "No",
+  "BUTTON_CANCEL": "Cancel",
+  "BUTTON_OK": "OK",
+
+  "MENU_HOME": "Home",
+  "MENU_MENU": "Menu",
+  "MENU_LOGOUT": "Logout",
+
+  "MENU_HELP_LABEL": "Help",
+  "MENU_SETTINGS_LABEL": "Settings",
+  "MENU_LINK_LABEL": "AI Community",
+
+  "DARK_THEME_LABEL": "Use dark theme",
+  "LIGHT_THEME_LABEL": "Use light theme",
+
+  "MENU_ITEM_LANGUAGE_LABEL": "Language",
+  "MENU_ITEM_ENGLISH": "English",
+  "MENU_ITEM_SPANISH": "Español",
+  "MENU_ITEM_PORTUGUESE": "Português",
+
+  "TITLE_LISA": "Chatbot Lisa",
+  "TITLE_LIBRE": "Chatbot Libre",
+  "TITLE_PLAYBOOK": "Chatbot Playbook",
+  "TITLE_MAIN": "Main",
+  "TITLE_HELP_GUIDE": "Help Guide",
+  "TITLE_LOGOUT": "You are closing your session",
+  "QUESTION_ARE_YOU_SURE": "Are you sure you want to proceed?",
+
+  "CLEAR_CHAT": "New chat",
+  "BACK_MAIN": "Back",
+
+  "LABEL_WRITE_QUESTION": "Ask me whatever you want...",
+
+  "BUTTON_SEND": "Send",
+
+  "TIMEOUT_LOGOUT_TITTLE": "Session Expiration Notice",
+  "TIMEOUT_LOGOUT_MESSAGE": "Your session will time out in _SECONDS_ seconds. Do you want to renew it?",
+
+  "HELP_GUIDE_TIPS_TITLE": "What can I do with the chat?",
+  "HELP_GUIDE_PRACTICES_TITLE": "Good practices: Be clear and specific   ",
+  "HELP_GUIDE_PRACTICES_2_TITLE": "Good practice: Give the model time to 'think'",
+  "HELP_GUIDE_LIMITATIONS_TITLE": "Limitations",
+
+  "main": "Main",
+  "help-guide": "Help Guide",
+  "updates": "Updates",
+  "bug-report": "Help us to improve",
+  "PING_CHAT": "Pin",
+  "EDIT_CHAT": "Edit name",
+  "DELETE_CHAT": "Delete",
+  "UN_PING_CHAT": "Unpin",
+  "EXPORT_CHAT": "Export",
+  "EDIT_EMOJI": "Edit Icon",
+  "TODAY_CHAT": "Today",
+  "FAVORITES_CHAT": "Favorites",
+  "YESTERDAY_CHAT": "Yesterday",
+  "SEVEN_AGO_CHAT": "7 days ago",
+  "THIRTY_AGO_CHAT": "30 days ago",
+  "MESSAGE_ERROR": "Check your Internet connection and try again.",
+  "MESSAGE_RETRY": "Retry Send",
+  "ERROR_RESPONSE_GENERAL": " An error occurred while processing your request. Please try again later.",
+  "DELETE_CHAT_TITLE": "Confirmation",
+  "DELETE_CHAT_QUESTION": "Are you sure you want to delete the chat",
+  "EDIT_CHAT_TITLE": "Change the name of this conversation",
+  "EDIT_CATEGORY_TITLE": "Knowledge Base Name",
+  "EDIT_CHAT_PLACEHOLDER": "New Chat Name",
+  "EDIT_CHAT_CANCEL": "Cancel",
+  "EDIT_CHAT_CONFIRM": "Confirm",
+
+  "POWERED_BY_LABEL": "Powered by Chat GPT",
+
+  "EJEMPLOS_TITLE_LABEL": "Examples",
+  "EJEMPLO_TITLE_LABEL_1": "About popular destinations",
+  "EJEMPLO_TITLE_LABEL_2": "How many airports have a given city",
+  "EJEMPLO_TEXT_LABEL_1": "Generate a list of 5 popular destinations in South America. Includes the nearest airport",
+  "EJEMPLO_TEXT_LABEL_2": "How many airports does New York City have? Give me a link to find transportation for each of them",
+
+  "CAPACIDADES_TITLE_LABEL": "Capabilites",
+  "CAPACIDAD_TEXT_LABEL_1": "This Chat uses information from a model pre-trained by OpenAI.",
+  "CAPACIDAD_TEXT_LABEL_2": "You can ask it for actions such as: answering questions, generating lists, generating texts, requesting links, etc.",
+  "CAPACIDAD_TEXT_LABEL_3": "Choose the language in which you want to receive answers. You can select between Spanish, Portuguese and English by clicking on the globe icon.",
+
+  "LIMITACIONES_TITLE_LABEL": "Limitations",
+  "LIMITACION_TEXT_LABEL_1": "May generate incorrect or outdated answers, limited until 2022.",
+  "LIMITACION_TEXT_LABEL_2": "It does not answer specific questions about the business of LATAM Airlines, nor its domains.",
+
+  "FILES_TITLE_LABEL": "Manage your files",
+  "FILES_PDF_DISCLAIMER": "Only <span class='red-text'>PDF</span> format files",
+  "FILES_ADD_KNOWLEDGE": "Knowledge Base",
+  "FILES_EDIT_KNOWLEDGE": "Edit Knowledge Base",
+  "FILES_ADD_KNOWLEDGE_MODAL": "Add new Knowledge Base",
+  "FILES_ADD_KNOWLEDGE_MODAL_PLACEHOLDER": "Write the name (4 characters minimum)",
+  "ADD_DOCUMENT_TREE_LABEL": "Add document to ",
+  "DELETE_DOCUMENT_TREE_LABEL": "Delete",
+  "CLIPBOARD_MESSAGE": "Response copied to clipboard",
+  "EXISTING_NAME_KNOWLEDGE_LABEL": "There is already a Knowledge Base with that name",
+  "SNACKBAR_CLOSE": "Close",
+  "NOT_PROCESSED_LABEL": "Processing...",
+
+  "QUESTION_FEEDBACK": "Why have you chosen this valuation?",
+  "QUESTION_FEEDBACK_OPTIONAL": "(optional)",
+  "CHIP_FEEDBACK_1": "Incorrect",
+  "CHIP_FEEDBACK_2": "Incomplete",
+  "CHIP_FEEDBACK_3": "Other",
+  "INPUT_LABEL_FEEDBACK": "Give more feedback (4000 characters maximum)",
+  "BUTTON_SEND_FEEDBACK": "Send",
+  "RESPONDE_FEEDBACK_THANKS": "Thanks for your comments!!",
+  "EDIT_COMMENTS_FEEDBACK": "Edit comments",
+  "ADD_COMMENTS_FEEDBACK": "Add comentarios",
+  "WARNING_MAXLEGTH_FEEDBACK": "Maximum length reached",
+  "BUTTON_TKT_ZENDESK": "Create a case in RH Connect",
+
+  "EJEMPLO_LABEL": "See example",
+
+  "CAPABILITY_TITLE_1": "Summarizing",
+  "CAPABILITY_TEXT_1": "Summaries of texts or ideas",
+  "CAPABILITY_TITLE_2": "Inferring",
+  "CAPABILITY_TEXT_2": "Infer or deduce conclusions, based on texts delivered to the chatbot, classify feelings, determine topics or themes",
+  "CAPABILITY_TITLE_3": "Transforming",
+  "CAPABILITY_TEXT_3": "Transform or format texts, convert into another output according to what is required, translate, change the tone of a text, check spelling and writing",
+  "CAPABILITY_TITLE_4": "Expanding",
+  "CAPABILITY_TEXT_4": "Create or generate text from an input, considering tone, feeling, themes, etc.",
+
+  "CLEAR_SPEC_TITLE_1": "Tactic #1",
+  "CLEAR_SPEC_TEXT_1": "Use delimiting characters to highlight or section text: quotation marks, parentheses, brackets, etc.",
+  "CLEAR_SPEC_TITLE_2": "Tactic #2",
+  "CLEAR_SPEC_TEXT_2": "Specifies the format and structure of the response",
+  "CLEAR_SPEC_TITLE_3": "Tactic #3",
+  "CLEAR_SPEC_TEXT_3": "Verifies that certain conditions are met to direct the response to one path or another",
+  "CLEAR_SPEC_TITLE_4": "Tactic #4",
+  "CLEAR_SPEC_TEXT_4": "Give examples of correct or successful outputs and then ask for a task",
+  "OTHERS": "OTHERS",
+
+  "UPDATES_TITLE": "Updates",
+
+  "updates_list": {
+    "update": [
+      {
+        "date": "03/11/2024",
+        "description": "Improvements in the user experience.",
+        "content": "<p>In this new edition:: </p><ul><li>The suggestion cards change depending on the mode chosen.</li><li>Change in the representative icon for the MSP knowledge source.</li><li>When you refresh the website in the browser, the mode in which you were interacting will be maintained.</li></ul>"
+      },
+      {
+        "date": "03/01/2024",
+        "description": "New modes in RH+: we have extended the functionalities of our chat tool.",
+        "content": "<p>The news: </p><ul><li>Chat Libre Mode: All Chat Libre features and capabilities are now available in RH+. Upload documents and consult their content. (Available for certain users)</li><li>Images Mode: Generates 4 image alternatives from a text instruction.</li><li>All modes includes their own conversation history.</li><liNew source of knowledge: MSP | Airport Agent, available only to certain users.</li><li>We incorporated a new feedback mechanism for the user when they are waiting for responses from the chat, called 'Action Log'. This records the actions and steps that are executed when making a request.</li></ul>"
+      },
+      {
+        "date": "02/15/2024",
+        "description": "New version of RH+, with improvements in the user interface and user experience. Image generation with DALL·E 3.",
+        "content": "<p>This new version includes: </p><ul><li><b>Model selector:</b> Certain users can now choose the LLM model that best suits them to generate responses. Consider the response speed of each model.</li><li><b>Knowledge Base selector: </b> RH+ incorporates various sources of knowledge, so you can select the line that interests you and interact with the chat. </li><li><b>Image generation: </b> We enable DALL·E 3 so you can generate images from text.</li><li>We enable a feedback and evaluation mechanism for the chatbot's responses. Evaluate among the available options or leave a comment. Your opinion interests us!</li><li>We incorporated a welcome screen to the chat, where you will find suggestions for questions based on their popularity in the various topics of HR+ knowledge.</li></ul>"
+      },
+      {
+        "date": "01/01/2024",
+        "description": "Welcome to RH+. This is the initial release of the app.",
+        "content": "<p>We kick off this new LATAM tool. We hope it will be of great help to all collaborators and help to take advantage of artificial intelligence and its different models.</p>"
+      }
+    ]
+  },
+
+  "HELP_GUIDE_INFO": {
+    "capabilities": [
+      {
+        "name": "capabilities1",
+        "title": "Summarizing",
+        "text": "Summaries of texts or ideas"
+      },
+      {
+        "name": "capabilities2",
+        "title": "Inferring",
+        "text": "Infer or deduce conclusions, based on texts delivered to the chatbot, classify feelings, determine topics or themes"
+      },
+      {
+        "name": "capabilities3",
+        "title": "Transforming",
+        "text": "Transform or format texts, convert into another output according to what is required, translate, change the tone of a text, check spelling and writing"
+      },
+      {
+        "name": "capabilities4",
+        "title": "Expanding",
+        "text": "Create or generate text from an input, considering tone, feeling, themes, etc."
+      }
+    ],
+    "clearAndSpecific": [
+      {
+        "name": "clearAndSpecific1",
+        "examples": [
+          "Resume el siguiente texto delimitado por comillas simples en una oración y máximo 25 palabras: 'LATAM Airlines es una aerolínea multinacional formada por la fusión de las aerolíneas sudamericanas LAN, TAM y sus filiales. Con sede en Santiago (Chile), la aerolínea opera vuelos para pasajeros a países en América, el Caribe, Europa, África, Asia, Medio Oriente y Oceanía, llegando a un total de 136 destinos en 24 países. En carga, la aerolínea sirve a 137 destinos en 18 países, con una plantilla conformada por 29.000 empleados y una flota de 302 aviones'",
+          "Resume el texto delimitado por paréntesis en una sola oración:  (Deberías expresar lo que deseas que haga un modelo mediante instrucciones que sean lo más claras y específicas posible. Esto guiará al modelo hacia el resultado deseado y reducirá las posibilidades de recibir respuestas irrelevantes o incorrectas. No confundas escribir un prompt claro con escribir un prompt corto. En muchos casos, los prompts más largos proporcionan más claridad y contexto al modelo, lo que puede llevar a resultados más detallados y relevantes.) "
+        ],
+        "title": "Tactic #1",
+        "text": "Use delimiting characters to highlight or section text: quotation marks, parentheses, brackets, etc."
+      },
+      {
+        "name": "clearAndSpecific2",
+        "examples": [
+          "Genera una lista de 5 destinos populares en Sudamérica, incluyendo el país en donde se encuentra y el aeropuerto más cercano para llegar. La lista debe tener el siguiente formato: Destino, Pais: Aeropuerto más cercano'",
+          "Genera una lista de tres títulos ficticios de libros junto con sus autores y géneros. Propórcionalos en formato JSON con las siguientes claves: book_id, título, autor, género."
+        ],
+        "title": "Tactic #2",
+        "text": "Specifies the format and structure of the response."
+      },
+      {
+        "name": "clearAndSpecific3",
+        "examples": [
+          "En el siguiente texto delimitado por paréntesis debes determinar si existe un conjunto de pasos a seguir. Si es así, reescribe los pasos en el siguiente formato: Paso: 1.., Paso 2.., Paso N.. Si el texto no contiene ninguna serie de instrucciones a seguir, tu respuesta debe ser 'No hay pasos a seguir' (para poder volar de un pais a otro es muy simple, primero debes comprar un ticket de avión, luego preparar tus maletas, dirigirte al aeropuerto, embarcar al avión, disfrutar el vuelo, retirar tus maletas y luego salir del aeropuerto.)"
+        ],
+        "title": "Tactic #3",
+        "text": "Verifies that certain conditions are met to direct the response to one path or another."
+      },
+      {
+        "name": "clearAndSpecific4",
+        "examples": [
+          "Tu tarea es seguir la conversación de manera coherente. <cliente>: Quiero saber en qué estado está mi vuelo. <asistente>: Sí, claro, necesito su nombre completo y su número de vuelo. <cliente>: Juan Perez, LA99. <asistente>: ¿Cuál es la fecha de su vuelo?"
+        ],
+        "title": "Tactic #4",
+        "text": "Give examples of correct or successful outputs and then ask for a task."
+      }
+    ],
+    "letThink": [
+      {
+        "name": "letThink1",
+        "examples": [
+          "Realiza las siguientes acciones: 1 - Resumir el siguiente texto delimitado por triple barra invertida con 1 oración. 2 - Traducir el resumen al portugues. 3 - Enumerar cada nombre presente en el resumen en portugues. 4 - Generar un objeto JSON que contenga las siguientes claves: port_summary, num_names. Separa tus respuestas con saltos de línea. Text: ```In a charming village, siblings Jack and Jill set out on a quest to fetch water from a hilltop well. As they climbed, singing joyfully, misfortune struck—Jack tripped on a stone and tumbled down the hill, with Jill following suit. Though slightly battered, the pair returned home to comforting embraces. Despite the mishap, their adventurous spirits remained undimmed, and they continued exploring with delight.```"
+        ],
+        "title": "Tactic #1",
+        "text": "Specify a task to complete in steps"
+      },
+      {
+        "name": "letThink2",
+        "examples": [],
+        "title": "Tactic #2",
+        "text": "Ask the model to work on its own solution"
+      }
+    ],
+    "hallucinations": [
+      "The model can generate or create content based on the information we provide",
+      "If we provide non-real information, they will not know how to discriminate whether it is true or not, so they could base their answers on false assumptions or premises",
+      "We must take into account the limits of what we indicate, separating what is real from what “could seem real”"
+    ]
+  },
+
+  "BUG_REPORT_TITLE": "Help us to improve",
+  "BUG_REPORT_CATEGORY": "I would like to: ",
+  "BUG_REPORT_CATEGORY_OPTION_1": "Report a bug",
+  "BUG_REPORT_CATEGORY_OPTION_2": "Suggest an improvement or request a feature",
+  "BUG_REPORT_TITLE_FORM_LABEL": "Enter a title for your report",
+  "BUG_REPORT_DESCRIPTION": "Describe the problem or suggestion in detail",
+  "BUG_REPORT_SUBMIT": "Submit",
+  "BUG_REPORT_CLOSE": "Close",
+  "BUG_FORM_TITLE": "Help us to improve RH+",
+  "BUG_FORM_SUBTITLE": "Your comments are important to us. Tell us if you find any errors or if you have any suggestions to improve the application.",
+  "BUG_REPORT_ATTACHMENT": "Attach a file",
+  "THANKS_REPORT_TITLE": "Thanks for your report",
+  "THANKS_REPORT_SUBTITLE": "We will review your comments and suggestions to improve the application.",
+
+  "TOUR_HIDE_LABEL": "Don't show again",
+  "TOUR_STEP_START_TITLE": "Welcome to RH+",
+  "TOUR_STEP_MENU_TITLE": "Menu",
+  "TOUR_STEP_NEW_CHAT_TITLE": "New Chat",
+  "TOUR_STEP_HISTORY_TITLE": "Conversation history",
+  "TOUR_STEP_PROMPT_TITLE": "Send Prompt",
+  "TOUR_STEP_VISION_TITLE": "Image recognition",
+  "TOUR_STEP_MIC_TITLE": "Audio transcription",
+  "TOUR_STEP_KNOWLEDGE_TITLE": "Knowledge Base",
+  "TOUR_STEP_MODELS_TITLE": "IA Models",
+  "TOUR_STEP_HELP_TITLE": "Help Guide",
+  "TOUR_STEP_UPDATES_TITLE": "Updates",
+  "TOUR_STEP_ERRORS_TITLE": "Report Errors",
+  "TOUR_STEP_GUIDE_TITLE": "Guided Tour",
+  "TOUR_STEP_END_TITLE": "The end",
+
+  "TOUR_STEP_100_TITLE": "PDF File Management",
+
+  "TOUR_STEP_START_TEXT": "Next, we will show you the main functionalities of this tool, our corporate chatGPT at LATAM Airlines!",
+  "TOUR_STEP_MENU_TEXT": "This is the application menu. From here you can access the different sections and settings to customize and enhance your RH+ experience.",
+  "TOUR_STEP_NEW_CHAT_TEXT": "Start a new conversation tab with RH+. You can ask whatever you want, about any topic. RH+ will respond to you and you will be able to access your different conversations whenever you want.",
+  "TOUR_STEP_HISTORY_TEXT": "Check your conversation history with RH+. You can set them as favorites, change their title, and delete them whenever you want. From now on you will no longer lose your information and you will have access to review it whenever you want, even for months after inactivity.",
+  "TOUR_STEP_PROMPT_TEXT": "Send a prompt/query/question to RH+. You can send a text or transcribe audio to text with your voice.",
+  "TOUR_STEP_VISION_TEXT": "Upload images and Chat Libre will respond with a description of their content. You can ask about details or infer information about them.",
+  "TOUR_STEP_MIC_TEXT": "Because the inclusion of everyone is a priority for us, activate the microphone and start dictating your question. RH+ will transcribe it to text to facilitate your user experience.",
+  "TOUR_STEP_KNOWLEDGE_TEXT": "Choose here between the different knowledge alternatives in this chat. You can ask about HR, Service Desk or General Knowledge.",
+  "TOUR_STEP_MODELS_TEXT": "You can choose the most evolved artificial intelligence models on the market and tested by our technology team to formulate your response to what you are looking for. Such as GPT-3.5, Gemini Pro and Bison, which we recommend for fast and real-time responses. Or also more complex and detailed models such as GPT-4 and Unicorn, which may take more time to give you an answer that will be more complete and rich in information.",
+  "TOUR_STEP_HELP_TEXT": "Find the RH+ help guide here. You can review the capabilities, limitations and good practices of the application. Check out some prompt examples and become a prompt engineering guru!",
+  "TOUR_STEP_UPDATES_TEXT": "Here you can find the latest updates for RH+. We recommend checking them to stay informed about new features and improvements.",
+  "TOUR_STEP_ERRORS_TEXT": "Contribute to our development. Use this option to report errors or suggest new features that you think would be beneficial.",
+  "TOUR_STEP_GUIDE_TEXT": "You can return to this guided tour whenever you want or need to by clicking on this icon.",
+  "TOUR_STEP_END_TEXT": "This is the end of the tour. Enjoy RH+ experience!",
+
+  "TOUR_STEP_FILES_TEXT": "Manage your files and knowledge bases that encompass multiple PDFs from here. You can upload PDF files and ask RH+ about their content. This is a functionality that is still in the process of maturation, so its status is experimental. We ask that you do not use very complex PDFs for now, that is, PDFs with well-written text, without or with few images and we recommend that if it contains tables you transform them into list format. Furthermore, if your document has many acronyms it is recommended that you generate a glossary/dictionary page",
+
+  "TOUR_NEXT_BUTTON": "Next",
+  "TOUR_PREV_BUTTON": "Previous",
+  "TOUR_CLOSE_BUTTON": "Close",
+
+  "TOUR_BUTTON_TOOLTIP": "Guided Tour",
+  "HELP_GUIDE_BUTTON_TOOLTIP": "Help Guide",
+  "FILES_BUTTON_TOOLTIP": "File Management",
+  "CLIPBOARD_BUTTON_TOOLTIP": "Copy to clipboard",
+  "DOWNLOAD_BUTTON_TOOLTIP": "Download response",
+  "UPLOAD_FILE_BUTTON_TOOLTIP": "Upload file without category",
+  "SELECT_FILE_BUTTON_TEXT": "Browse My PDFs",
+
+  "enero": "January",
+  "febrero": "February",
+  "marzo": "March",
+  "abril": "April",
+  "mayo": "May",
+  "junio": "June",
+  "julio": "July",
+  "agosto": "August",
+  "septiembre": "September",
+  "octubre": "October",
+  "noviembre": "November",
+  "diciembre": "December",
+
+  "EDIT_ICON_TITLE": "Change Icon for this conversation",
+  "ZERO_STATE_TITLE": "Welcome to ",
+  "ZERO_STATE_SUBTITLE": "Find what you need",
+
+  "gemini_pro": "Gemini Pro",
+  "gemini_15_pro": "Gemini 1.5 Pro",
+  "gemini_15_flash": "Gemini 1.5 Flash",
+  "gemini_ultra": "Gemini Ultra",
+  "text_bison": "Bison",
+  "text_unicorn": "Unicorn",
+  "gpt_35_turbo": "GPT-3.5",
+  "gpt_35_turbo_dedicated": "GPT-3.5 Dedicated",
+  "gpt_4_turbo": "GPT-4",
+  "dalle_3": "DALL·E 3",
+  "gemini_10_pro_vision": "Gemini 1.0 Pro Vision",
+  "gpt_4o_dedicated": "GPT-4o Dedicated",
+
+  "PDF_DOCS_DISCLAIMER": "You will only be able to ask questions about selected documents. <br> Files larger than 20MB cannot be uploaded. <br> You will only be able to consult the content in text format of your files. Images, scanners and graphics cannot yet be consulted by our AIs <br>",
+  "POWERED_BY_LABEL_DOCS": "Powered by <span class='power-motor'> GPT-4 </span> or <span class='power-motor'> Gemini 1.5 Pro </span> . It's your choice!",
+
+  "DISCLAIMER_RH+": "RH+ may display inaccurate information, so check his answers.",
+  "DISCLAIMER_CHAT_LIBRE": "Chat Libre may display inaccurate information, so check his answers.",
+  "DISCLAIMER_IMAGENES": "The images generated by DALL·E are the result of an artificial intelligence model and may not accurately represent reality. Any use of the generated images is the responsibility of the user",
+  "ZERO_STATE_SUBTITLE_RH+": "Search what you need",
+  "ZERO_STATE_SUBTITLE_CHAT_LIBRE": "Search what you need",
+  "ZERO_STATE_SUBTITLE_IMAGENES": "This functionality to generate images is in an experimental state, it is also natural that it takes longer than normal to respond in contrast to the response times of GPT-3.5 that bring only text.<br> Regularly your request to generate images should take between 45 seconds to 2 minutes.",
+  "ZERO_STATE_MOBILE_DESC_RH+": "The generative chat of HHRR",
+  "ZERO_STATE_MOBILE_DESC_CHAT_LIBRE": "The generative chat of LATAM for Latamers",
+  "ZERO_STATE_MOBILE_DESC_IMAGENES": "Generate images from text",
+
+  "TEXT_DESCRIPTION_RRHH": "Ask and we will answer",
+
+  "STEP_1_ACTION_LOG_TEXT": "Looking for information",
+  "STEP_2_ACTION_LOG_TEXT": "Generating answer",
+  "STEP_3_ACTION_LOG_TEXT": "We continue working on generating your answer",
+  "STEP_4_ACTION_LOG_TEXT": "We couldn't generate an answer, please try again later",
+  "STEP_1_ACTION_LOG_IMAGE": "Generating images",
+  "MORE_SECONDS_ACTION_LOG": "We continue working to generate your response",
+  "ERROR_TEXT_ACTION_LOG": "No response could be generated, please try again later",
+  "ERROR_IMAGE_ACTION_LOG": "No response could be generated, please try again later",
+
+  "content_policy_violation": "Your request was rejected as a result of our safety system. Your prompt may contain text that is not allowed by our safety system.",
+
+  "NO_IMAGES_GENERATE": "No images could be generated",
+  "LOAD_MESSAGES_PREVIOUS": "Load previous messages",
+  "SEE_AS_BASIC_USER": "See as Basic user",
+  "SEE_AS_ADMIN_USER": "See as Admin user",
+
+  "Recursos Humanos": "RRHH",
+  "Manual del Servicio al Pasajero": "MSP",
+  "all": "General search",
+  "Maintenance-B767": "eMantto",
+  "CHAT LIBRE": "Chat Libre",
+  "IMAGENES": "Images",
+  "PDF_MODE_LABEL": "Your PDFs",
+  "VISION_MODE_LABEL": "Vision",
+
+  "UPLOAD_FILES_MESSAGE": "We are currently uploading your PDFs, please wait a moment...",
+
+  "PROFILE_SAVE": "Save",
+  "PROFILE_CANCEL": "Cancel",
+  "PROFILE_UPLOAD_IMAGE": "Upload image",
+  "PROFILE_DELETE_CHATS": "Delete chats",
+  "PROFILE_NAME": "Name",
+  "PROFILE_EMAIL": "Email",
+  "PROFILE_PROFILE": "Profile",
+  "PROFILE_REMOVE_AVATAR": "Remove avatar",
+  "PROFILE_CHANGE_AVATAR": "Change avatar",
+  "PROFILE_MY_PROFILE": "My Profile",
+
+  "chat_metatron_user_basic": "Basic",
+  "chat_metatron_user_admin": "Admin",
+  "chat_metatron_user_pro": "Pro",
+
+  "/my-vacations": "Check your available vacation days.",
+  "chat_response_vacations": "Thank you for your inquiry about available vacation days. After reviewing your records, we have verified that you currently have {DAYS} vacation days available.",
+  "chat_response_vacations_zero": "Thank you for your inquiry about available vacation days. After reviewing your records, we have verified that you currently have no vacation days available."
+}

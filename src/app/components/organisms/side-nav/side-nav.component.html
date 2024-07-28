@@ -1,0 +1,134 @@
+<div>
+  <div class="button-chat">
+    <app-primary-button
+      (click)="clearChat()"
+      name="{{ 'CLEAR_CHAT' | translate }}"
+      [hasIcon]="true"
+      class="clear-chat">
+    </app-primary-button>
+  </div>
+
+  <div class="list">
+    <div>
+      @for (chat of chats; track chat.period) {
+        <div class="title">{{ chat.period | translate }}</div>
+        @for (item of chat.topics; track item.title) {
+          <app-talk-item [itemTopic]="item" class="fadeIn"></app-talk-item>
+        }
+      }
+    </div>
+  </div>
+  <div>
+    <div id="helpMenu" class="item-select">
+      <div>
+        <img class="icon-help" alt="icon help" />
+        <span> {{ 'MENU_HELP_LABEL' | translate }} </span>
+      </div>
+
+      <mat-menu #menuHelp="matMenu" yPosition="above">
+        <button mat-menu-item id="guided-tour-icon" (click)="startTour()">
+          <img class="icon-tour" alt="icon tour" />
+          <span>{{ 'TOUR_STEP_GUIDE_TITLE' | translate }}</span>
+        </button>
+        <button mat-menu-item id="help-guide-icon" (click)="openHelpGuide()">
+          <img class="icon-help-chat" alt="icon help" />
+          <span>{{ 'TITLE_HELP_GUIDE' | translate }}</span>
+        </button>
+        <button mat-menu-item id="updates-menu" (click)="openUpdates()">
+          <img class="icon-update" alt="icon update" />
+          <span>{{ 'UPDATES_TITLE' | translate }}</span>
+        </button>
+        <button
+          mat-menu-item
+          id="updates-menu"
+          (click)="
+            openExternalWebsite(
+              'https://sites.google.com/latam.com/ai-community'
+            )
+          ">
+          <img class="icon-website" alt="icon update" />
+          <span>{{ 'MENU_LINK_LABEL' | translate }}</span>
+        </button>
+        <!-- <button mat-menu-item id="reports-menu" (click)="openReportIssue()">
+          <img class="icon-report" alt="icon report" />
+          <span>{{ 'BUG_REPORT_TITLE' | translate }}</span>
+        </button> -->
+      </mat-menu>
+      <button
+        class="btn-options-help"
+        id="btn-menu-help-options"
+        mat-icon-button
+        [matMenuTriggerFor]="menuHelp">
+        <mat-icon class="more-items">more_vert</mat-icon>
+        <div [matMenuTriggerFor]="menuHelp"></div>
+      </button>
+    </div>
+    <div class="item-select">
+      <div>
+        <img class="icon-settings" alt="icon help" />
+        <span> {{ 'MENU_SETTINGS_LABEL' | translate }} </span>
+      </div>
+      <button
+        class="btn-options-help"
+        mat-icon-button
+        [matMenuTriggerFor]="menuSetting">
+        <mat-icon class="more-items">more_vert</mat-icon>
+        <div [matMenuTriggerFor]="menuSetting"></div>
+      </button>
+      <mat-menu #menuSetting="matMenu" yPosition="above">
+        @if (isChatLibre) {
+          @if (!isDarkMode) {
+            <button mat-menu-item (click)="changeTheme(true)">
+              <mat-icon>dark_mode</mat-icon>
+              <span>{{ 'DARK_THEME_LABEL' | translate }}</span>
+            </button>
+          }
+
+          @if (isDarkMode) {
+            <button mat-menu-item (click)="changeTheme(false)">
+              <mat-icon>light_mode</mat-icon>
+              <span>{{ 'LIGHT_THEME_LABEL' | translate }}</span>
+            </button>
+          }
+        }
+        <button mat-menu-item [matMenuTriggerFor]="languages">
+          <mat-icon>language</mat-icon>
+          <span>{{ 'MENU_ITEM_LANGUAGE_LABEL' | translate }}</span>
+        </button>
+        <mat-menu #languages="matMenu" class="menu-languages" yPosition="above">
+          <button mat-menu-item (click)="setLanguage('es')">
+            {{ 'MENU_ITEM_SPANISH' | translate }}
+            <mat-icon *ngIf="getLanguage() === 'es'">check</mat-icon>
+          </button>
+          <button mat-menu-item (click)="setLanguage('en')">
+            {{ 'MENU_ITEM_ENGLISH' | translate }}
+            <mat-icon *ngIf="getLanguage() === 'en'">check</mat-icon>
+          </button>
+          <button mat-menu-item (click)="setLanguage('pt')">
+            {{ 'MENU_ITEM_PORTUGUESE' | translate }}
+            <mat-icon *ngIf="getLanguage() === 'pt'">check</mat-icon>
+          </button>
+        </mat-menu>
+      </mat-menu>
+    </div>
+    <div class="item-select">
+      <button mat-menu-item id="reports-menu" (click)="openReportIssue()">
+        <img class="icon-report" alt="icon report" />
+        <span>{{ 'BUG_REPORT_TITLE' | translate }}</span>
+      </button>
+    </div>
+    <!-- <a
+      href=""
+      target="_blank"
+      id="site-anchor"
+      class="item-select"
+      rel="noopener"
+      (click)="openReportIssue()">
+      <div>
+        <img class="icon-website" alt="icon help" />
+        <span> {{ 'MENU_LINK_LABEL' | translate }} </span>
+      </div>
+      <mat-icon>open_in_new</mat-icon>
+    </a> -->
+  </div>
+</div>

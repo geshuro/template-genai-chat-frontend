@@ -1,0 +1,129 @@
+@import '../../../../assets/styles/base/typography';
+
+#header-container {
+  position: absolute;
+  width: 100%;
+}
+
+#main-container {
+  background-color: var(--color-background-primary);
+  height: 100vh;
+  padding-top: 60px;
+
+  #main-wrapper {
+    background-color: var(--color-background-secondary);
+    border-radius: 15px;
+    padding: 2% 4% 0 4%;
+    margin: 0 2% 0;
+    width: 88%;
+    height: 85vh;
+
+    #title-container {
+      display: flex;
+      align-items: center;
+
+      i {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+
+        &.icon-updates {
+          content: var(--icon-update-header);
+        }
+      }
+
+      .main-title {
+        margin: 0 0 0 10px;
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: var(--color-text-messages);
+      }
+    }
+
+    #updates-container {
+      margin-top: 30px;
+      overflow-y: scroll;
+      // height: 85vh;
+      height: 80%;
+      padding-right: 10px;
+
+      .update {
+        background-color: var(--color-background-terciary);
+        color: var(--color-text-messages);
+        border-radius: 10px;
+        padding: 2%;
+        margin-bottom: 20px;
+
+        .update-date {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #main-container {
+    #main-wrapper {
+      #title-container {
+        margin-top: 10px;
+      }
+
+      #updates-container {
+        // height: 80%;
+        .update {
+          padding: 2% 4%;
+
+          .update-date {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #main-container {
+    #main-wrapper {
+      #title-container {
+        margin-top: 15px;
+
+        .main-title {
+          font-size: 1.5rem;
+        }
+      }
+
+      #updates-container {
+        .update {
+          padding: 4%;
+
+          .update-date {
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #form-container {
+    padding: 20px !important;
+  }
+  .main-title {
+    font-size: 1rem !important;
+  }
+  .close-button {
+    right: 10px !important;
+  }
+}
+
+.close-button {
+  position: absolute;
+  right: 48px;
+  top: 65px;
+}

@@ -1,0 +1,63 @@
+@import 'src/assets/scss/main.scss';
+
+.flex-items {
+  display: flex;
+  .container-item {
+    width: 250px;
+    box-shadow: 0px 1px 5px 0px #4658df;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0px 10px;
+    cursor: pointer;
+    .title-item {
+      font-size: 24px;
+      color: #1b0088;
+      text-align: center;
+      line-height: 1;
+      padding-top: 15px;
+    }
+    .img-item {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .container-item:hover {
+    box-shadow: 0px 1px 7px 0px #1b0088;
+  }
+}
+.pulse:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}

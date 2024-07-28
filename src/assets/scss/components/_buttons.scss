@@ -1,0 +1,34 @@
+.button-primary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary);
+  border-radius: 10px;
+  color: var(--color-terciary);
+  cursor: pointer;
+  border: none;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  padding: 5px;
+  font-family: 'LATAM Sans Regular', sans-serif !important;
+  div {
+    margin-left: 10px;
+  }
+}
+
+.button-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--btn-secondary);
+  border-radius: 10px;
+  color: var(--btn-secondary-text);
+  cursor: pointer;
+  border: var(--btn-secondary-border);
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+  padding: 5px;
+  font-family:
+    LATAM Sans Regular,
+    sans-serif !important;
+}

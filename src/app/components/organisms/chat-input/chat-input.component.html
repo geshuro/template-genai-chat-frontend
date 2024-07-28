@@ -1,0 +1,142 @@
+<div class="chat-input chips-files">
+  <mat-form-field>
+    <mat-menu #menuAttach="matMenu">
+      <button mat-menu-item (click)="openGDriveAttach()">
+        <mat-icon>add_to_drive</mat-icon>
+        <span>Google Drive</span>
+      </button>
+      <button mat-menu-item (click)="openAttachPanel()">
+        <mat-icon>devices</mat-icon>
+        <span>Tu computadora</span>
+      </button>
+    </mat-menu>
+    @if (!isMobile && chatActiveType === 'CHAT_LIBRE') {
+      <div matPrefix class="btn-input">
+        <button
+          mat-icon-button
+          [matMenuTriggerFor]="menuAttach"
+          [disabled]="processing"
+          [matBadge]="checklistSelection.length"
+          matBadgePosition="above"
+          matBadgeColor="accent">
+          <mat-icon>attach_file</mat-icon>
+        </button>
+        <hr style="height: 35px" />
+      </div>
+    }
+
+    @if (!isMobile && chatActiveType === 'RH+' && commandsList.length) {
+      <!-- <div matPrefix class="btn-input">
+        <button
+          (click)="openAutocomplete()"
+          mat-icon-button
+          [disabled]="processing">
+          <mat-icon>auto_fix_normal</mat-icon>
+        </button>
+        <hr style="height: 35px" />
+      </div> -->
+    }
+
+    <mat-label>{{ 'LABEL_WRITE_QUESTION' | translate }}</mat-label>
+
+    <textarea
+      class="font-regular white-bg"
+      maxlength="5000"
+      minlength="1"
+      id="chatInput"
+      #chatInput
+      rows="1"
+      matInput
+      [(ngModel)]="question"
+      (keyup.enter)="onTypingQuestion($event)"
+      (keydown)="preventEnter($event)"
+      (input)="adjustTextArea($event)"
+      [matAutocomplete]="auto"
+      #autoTrigger="matAutocompleteTrigger"
+      [matAutocompletePosition]="'above'">
+    </textarea>
+    <mat-autocomplete
+      #auto="matAutocomplete"
+      (optionSelected)="onSelectionChange($event)">
+      <div class="container-panel">
+        <div class="icons-command">
+          <img
+            class="icon-select"
+            mat-card-avatar
+            src="assets/icons/{{ itemSelected?.icon }}"
+            alt="icon" />
+        </div>
+        <div class="panel-command">
+          @for (
+            command of filteredCommands | async;
+            track command;
+            let last = $last
+          ) {
+            <mat-option [value]="command">
+              <div class="container-option-command">
+                <span> {{ command }}</span>
+                <small>{{ command | translate }}</small>
+              </div>
+            </mat-option>
+
+            @if (!last) {
+              <mat-divider></mat-divider>
+            }
+          }
+        </div>
+      </div>
+    </mat-autocomplete>
+
+    @if (hasImage) {
+      <div>
+        <button class="file-preview" (click)="closePreview()">
+          <mat-icon class="close-preview">close</mat-icon>
+        </button>
+        <img
+          src="{{ encryptedImage }}"
+          alt="image preview"
+          class="small-icon" />
+      </div>
+    }
+    @if (!processing) {
+      <div matSuffix class="btn-input">
+        @if (isMobile && chatActiveType === 'CHAT_LIBRE') {
+          <button
+            [matMenuTriggerFor]="menuAttach"
+            mat-icon-button
+            [disabled]="processing"
+            [matBadge]="checklistSelection.length"
+            matBadgePosition="above"
+            matBadgeColor="accent">
+            <mat-icon>attach_file</mat-icon>
+          </button>
+        }
+        <button
+          mat-icon-button
+          [disabled]="processing || question.length < 4"
+          (click)="onSend()">
+          <mat-icon id="send-prompt">send</mat-icon>
+        </button>
+        @if (showScanIcon && !isRHplus) {
+          <input
+            id="photo"
+            #photoInput
+            type="file"
+            class="hide-input"
+            (change)="onPhotoSelected($event)"
+            accept=".jpeg, .jpg, .png" />
+          <button (click)="photoInput.click()">
+            <img class="add-photo" id="add-photo-vision" alt="add-image-icon" />
+          </button>
+        }
+        <app-chat-input-mic [listening$]="listening$"></app-chat-input-mic>
+      </div>
+    } @else {
+      <div matSuffix class="btn-input">
+        <button (click)="stopChat()">
+          <img class="pause" alt="stop" />
+        </button>
+      </div>
+    }
+  </mat-form-field>
+</div>

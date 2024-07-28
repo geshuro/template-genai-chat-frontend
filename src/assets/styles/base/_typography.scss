@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'LATAM Sans Regular';
+  src:
+    url('../../fonts/_Latam_sans/LatamSansST-Regular.woff2') format('woff2'),
+    url('../../fonts/_Latam_sans/LatamSansST-Regular.woff') format('woff'),
+    url('../../fonts/_Latam_sans/LatamSansST-Regular.eot') format('eot'),
+    url('../../fonts/_Latam_sans/LatamSansST-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'LATAM Sans Light';
+  src:
+    url('../../fonts/_Latam_sans_light/Latam_Sans_Light.woff') format('woff'),
+    url('../../fonts/_Latam_sans_light/Latam_Sans_Light.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'LATAM Sans Bold';
+  src:
+    url('../../fonts/_Latam_sans_bold/LatamSansST-Bold.woff2') format('woff2'),
+    url('../../fonts/_Latam_sans_bold/LatamSansST-Bold.woff') format('woff'),
+    url('../../fonts/_Latam_sans_bold/LatamSansST-Bold.eot') format('eot'),
+    url('../../fonts/_Latam_sans_bold/LatamSansST-Bold.ttf') format('ttf');
+}
+
+$font-regular: 'LATAM Sans Regular';
+$font-bold: 'LATAM Sans Bold';
+$font-light: 'LATAM Sans Light';
+
+.font-regular {
+  font-family: $font-regular;
+  font-weight: 400;
+}
+
+.font-bold {
+  font-family: $font-bold;
+  font-weight: 700;
+}
+
+.font-light {
+  font-family: $font-light;
+  font-weight: 300;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

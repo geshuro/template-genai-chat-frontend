@@ -1,0 +1,79 @@
+@import '../../../../assets/styles/base/typography';
+
+.item-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.clicked {
+  background-color: var(--btn-color-hover_chat);
+  border-radius: 3px;
+}
+
+.noClicked {
+  background-color: transparent;
+}
+
+.text-talk-container {
+  display: flex;
+  font-size: 12px;
+  flex-direction: column;
+  align-items: baseline;
+
+  .topic-base {
+    @extend .font-bold;
+    font-size: 12px;
+    color: var(--color-text);
+    font-style: italic;
+  }
+  .talk-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+    min-width: 180px;
+    margin-left: 10px;
+    color: var(--color-text);
+    font-style: italic;
+  }
+}
+
+.note {
+  margin: 0px 10px 0px 3px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  background-color: #fff;
+  .icon {
+    margin-top: 6px;
+    font-size: 25px;
+    height: auto;
+    align-self: center;
+  }
+}
+
+.avatar {
+  height: auto;
+  width: 26px;
+  object-fit: contain;
+}
+
+.text-icon {
+  display: flex;
+  align-items: center;
+}
+
+app-talk-menu {
+  height: 48px;
+  display: block;
+}

@@ -1,0 +1,56 @@
+.mat-dialog-content-img {
+  max-height: 90vh;
+  max-width: 100vw;
+}
+
+@media (min-width: 768px) {
+  .mat-dialog-content-img {
+    max-height: 100vh;
+    max-width: 80vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .mat-dialog-content-img {
+    max-height: 90vh;
+    max-width: 100vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mat-dialog-content-img {
+    max-height: 90vh;
+    max-width: 100vw;
+  }
+}
+
+button {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.button-closed {
+  position: absolute;
+  right: 0px;
+  background-color: #8080806b;
+}
+
+.container-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .button-right {
+    position: absolute;
+    right: 0px;
+    background-color: #8080806b;
+  }
+
+  .button-left {
+    position: absolute;
+    left: 0px;
+    background-color: #8080806b;
+  }
+}

@@ -1,0 +1,33 @@
+<mat-dialog-content (swipeleft)="changeImg(1)" (swiperight)="changeImg(-1)">
+  <button
+    class="button-closed"
+    mat-icon-button
+    mat-dialog-close
+    color="primary"
+    matTooltip="{{ 'TOUR_CLOSE_BUTTON' | translate }}">
+    <mat-icon> closed </mat-icon>
+  </button>
+  <div class="container-image">
+    @if (!image.first && visorImages.length > 1) {
+      <button class="button-left" mat-button (click)="changeImg(-1)">
+        <mat-icon>chevron_left</mat-icon>
+      </button>
+    }
+    <img class="mat-dialog-content-img" [src]="image.src" [alt]="image.alt" />
+    @if (!image.last && visorImages.length > 1) {
+      <button class="button-right" mat-button (click)="changeImg(1)">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+    }
+  </div>
+</mat-dialog-content>
+
+<div mat-dialog-actions>
+  <button
+    mat-icon-button
+    color="primary"
+    (click)="downloadImage()"
+    matTooltip="{{ 'DOWNLOAD_BUTTON_TOOLTIP' | translate }}">
+    <mat-icon> download </mat-icon>
+  </button>
+</div>

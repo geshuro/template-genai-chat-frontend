@@ -1,0 +1,3 @@
+steps_quality: true
+steps_test: false
+steps_vulnerability: true

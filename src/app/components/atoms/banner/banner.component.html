@@ -1,0 +1,14 @@
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+<div class="container-banner" [ngClass]="currentBgClass">
+  <div class="message">
+    <img class="warning" alt="warning icon" />
+    <span class="message-text">{{ title }}</span>
+  </div>
+  <div class="container-left">
+    <span class="seeMore" (click)="openDetail()"> Ver más </span>
+    <div>
+      <img class="close-icon" alt="close icon" />
+    </div>
+  </div>
+</div>

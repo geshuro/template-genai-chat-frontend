@@ -1,0 +1,38 @@
+@import 'src/assets/scss/main.scss';
+
+:host ::ng-deep {
+  .mat-elevation-z8,
+  .mat-mdc-elevation-specific,
+  .mat-elevation-z8 {
+    box-shadow: none !important;
+  }
+}
+
+.custom-table {
+  box-shadow: 0px 3px 10px 2px rgba(27, 0, 136, 0.37);
+  -webkit-box-shadow: 0px 3px 10px 2px rgba(27, 0, 136, 0.37);
+  -moz-box-shadow: 0px 3px 10px 2px rgba(27, 0, 136, 0.37);
+}
+.btn-table {
+  border: none;
+  background-color: transparent;
+}
+
+.mat-mdc-header-cell {
+  font-size: 12px;
+  color: #757575;
+}
+
+.custom-paginator {
+  border-top: solid 1px rgba(0, 0, 0, 0.12);
+}
+
+.mat-mdc-header-row,
+.mat-mdc-row,
+.mat-mdc-paginator {
+  font-family: 'LATAM Sans Regular', sans-serif !important;
+}
+
+.mdc-data-table__content {
+  font-weight: 600;
+}

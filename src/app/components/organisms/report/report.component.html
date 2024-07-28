@@ -1,0 +1,88 @@
+<div id="main-container">
+  <div id="main-wrapper">
+    <div id="title-container">
+      <i class="icon-updates"></i>
+      <h2 class="main-title">{{ 'BUG_REPORT_TITLE' | translate }}</h2>
+    </div>
+    <button mat-icon-button mat-dialog-close class="close-button">
+      <mat-icon>close</mat-icon>
+    </button>
+    <div id="form-container">
+      <h2 class="form-title">{{ 'BUG_FORM_TITLE' | translate }}</h2>
+      <h3 class="form-subtitle">{{ 'BUG_FORM_SUBTITLE' | translate }}</h3>
+      @if (!backResponse) {
+        <form [formGroup]="reportForm" (ngSubmit)="onSubmit()">
+          <mat-form-field>
+            <mat-label>{{ 'BUG_REPORT_CATEGORY' | translate }}</mat-label>
+            <mat-select
+              formControlName="type"
+              name="type"
+              [class.invalid]="reportForm.get('type')?.invalid || isSubmitted">
+              <mat-option value="Error">{{
+                'BUG_REPORT_CATEGORY_OPTION_1' | translate
+              }}</mat-option>
+              <mat-option value="Request">{{
+                'BUG_REPORT_CATEGORY_OPTION_2' | translate
+              }}</mat-option>
+            </mat-select>
+            @if (
+              (reportForm.get('type')?.hasError('required') ||
+                reportForm.get('type')?.hasError('pattern')) &&
+              (reportForm.get('type')?.touched || isSubmitted)
+            ) {
+              <span class="error">This field is required</span>
+            }
+          </mat-form-field>
+          <mat-form-field>
+            <input
+              matInput
+              formControlName="title"
+              placeholder="{{ 'BUG_REPORT_TITLE_FORM_LABEL' | translate }}"
+              [class.invalid]="
+                reportForm.get('title')?.invalid || isSubmitted
+              " />
+            @if (
+              (reportForm.get('title')?.hasError('required') ||
+                reportForm.get('title')?.hasError('pattern')) &&
+              (reportForm.get('title')?.touched || isSubmitted)
+            ) {
+              <span class="error">This field is required</span>
+            }
+          </mat-form-field>
+          <mat-form-field>
+            <textarea
+              matInput
+              formControlName="description"
+              placeholder="{{ 'BUG_REPORT_DESCRIPTION' | translate }}"
+              [class.invalid]="
+                reportForm.get('description')?.invalid || isSubmitted
+              "></textarea>
+            @if (
+              (reportForm.get('description')?.hasError('required') ||
+                reportForm.get('description')?.hasError('pattern')) &&
+              (reportForm.get('description')?.touched || isSubmitted)
+            ) {
+              <span class="error">This field is required</span>
+            }
+          </mat-form-field>
+          <button
+            mat-button
+            type="submit"
+            [class.spinner]="loading"
+            [disabled]="loading">
+            <mat-icon>send</mat-icon>
+            {{ !loading ? ('BUG_REPORT_SUBMIT' | translate) : '' }}
+          </button>
+        </form>
+      }
+      @if (backResponse) {
+        <div id="form-response">
+          <h1>{{ 'THANKS_REPORT_TITLE' | translate }}</h1>
+          <h3>{{ 'THANKS_REPORT_SUBTITLE' | translate }}</h3>
+          <i class="icon-sent-report"></i>
+        </div>
+      }
+    </div>
+    <div style="height: 56px"></div>
+  </div>
+</div>

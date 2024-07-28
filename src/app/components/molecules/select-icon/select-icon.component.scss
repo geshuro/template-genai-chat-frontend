@@ -1,0 +1,120 @@
+@import '../../../../assets/styles/base/typography';
+
+.model-option {
+  margin-bottom: 15px;
+}
+
+.flex-option-container {
+  display: flex;
+  align-items: center;
+}
+
+.icon-select {
+  vertical-align: middle;
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  margin-bottom: 0;
+  border-radius: 0;
+  float: left;
+  background-size: contain;
+}
+.gemini_pro-icon {
+  background-image: url('../../../../assets/icons/logo-gemini.png');
+}
+.gemini_15_pro-icon {
+  background-image: url('../../../../assets/icons/logo-gemini.png');
+}
+
+.gemini_15_flash-icon {
+  background-image: url('../../../../assets/icons/logo-gemini.png');
+}
+
+.gemini_ultra-icon {
+  background-image: url('../../../../assets/icons/logo-gemini.png');
+}
+.text_bison-icon {
+  background-image: url('../../../../assets/icons/Google-logo.png');
+}
+.text_unicorn-icon,
+.imagen_2-icon {
+  background-image: url('../../../../assets/icons/Google-logo.png');
+}
+.gpt_35_turbo-icon,
+.gpt_35_turbo_dedicated-icon {
+  background-image: url('../../../../assets/icons/ChatGPT.png');
+}
+.gpt_4_turbo-icon,
+.gpt_4o_dedicated-icon {
+  background-image: url('../../../../assets/icons/ChatGPT-plus.png');
+}
+.dalle_3-icon {
+  background-image: url('../../../../assets/icons/ChatGPT-dall-3.png');
+}
+.gemini_10_pro_vision-icon {
+  background-image: url('../../../../assets/icons/logo-gemini-pro-vision.png');
+}
+
+.item-info {
+  float: left;
+  margin-left: 10px;
+  p {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 0;
+    @extend .font-regular;
+  }
+  span {
+    font-size: 14px;
+  }
+}
+
+:host ::ng-deep {
+  .mat-mdc-form-field-infix {
+    width: 240px;
+  }
+
+  .disabled-select {
+    pointer-events: none;
+
+    .mat-mdc-select-arrow {
+      display: none;
+    }
+  }
+
+  .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: var(--mdc-filled-text-field-container-color) !important;
+  }
+
+  .mat-mdc-select-value {
+    color: var(--mdc-filled-text-field-fill-color);
+    @extend .font-bold;
+  }
+  .mat-mdc-form-field-subscript-wrapper,
+  .mat-mdc-form-field-bottom-align::before {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  :host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 31px !important;
+    align-items: center !important;
+  }
+  :host
+    ::ng-deep
+    .mat-mdc-form-field-type-mat-select
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    border-radius: 5px !important;
+    margin-top: 15px;
+  }
+  :host ::ng-deep .mat-mdc-form-field-infix {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  :host ::ng-deep .mat-mdc-form-field-infix {
+    width: 300px;
+  }
+}

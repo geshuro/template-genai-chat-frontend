@@ -1,0 +1,29 @@
+<div style="margin-top: 100px">
+  <mat-card class="app_card" style="width: 320px; height: min-content">
+    <img
+      alt="Logo LATAM"
+      src="assets/pics/logo-latam-airlines-w.png"
+      width="120px" />
+
+    <h2 style="margin-top: 40px; text-align: center">
+      {{ 'LABEL_NO_ACCESS_1' | translate }}
+    </h2>
+
+    <h2 style="margin-top: 20px; text-align: center">
+      {{ 'LABEL_NO_ACCESS_2' | translate }}
+    </h2>
+
+    <button
+      style="margin-top: 10px"
+      type="button"
+      class="app_button"
+      mat-raised-button
+      (click)="logout()">
+      {{ 'BUTTON_LOGOUT' | translate }}
+    </button>
+  </mat-card>
+</div>
+
+<div class="app_footer">
+  <app-footer></app-footer>
+</div>

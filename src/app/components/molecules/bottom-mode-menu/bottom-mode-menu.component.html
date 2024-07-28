@@ -1,0 +1,15 @@
+<h3 class="subtitle">Selecciona el modo</h3>
+
+@if (availableChats.length > 1) {
+  <div id="modes-list">
+    @for (chat of availableChats; track chat) {
+      <button (click)="changeChat(chat)">
+        <img src="{{ chat.logo }}" alt="" class="logo" />
+        <div class="text-container">
+          <!-- <span class="title">{{ chat.label }}</span> -->
+          <span class="subtitle">{{ chat.mobileDesc | translate }}</span>
+        </div>
+      </button>
+    }
+  </div>
+}

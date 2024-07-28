@@ -1,0 +1,19 @@
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+@if (images.length === 0) {
+  <div>
+    <p>{{ 'NO_IMAGES_GENERATE' | translate }}</p>
+  </div>
+} @else {
+  <mat-grid-list [cols]="breakpoint" gutterSize="5px" [rowHeight]="321">
+    @for (item of images; track $index) {
+      <mat-grid-tile>
+        <img
+          class="gallery-small-image"
+          [src]="item.src"
+          [alt]="item.alt"
+          (click)="openDialog(item)" />
+      </mat-grid-tile>
+    }
+  </mat-grid-list>
+}

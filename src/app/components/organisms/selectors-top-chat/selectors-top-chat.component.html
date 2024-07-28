@@ -1,0 +1,33 @@
+<div class="container-selectors">
+  @if (viewLetf) {
+    <app-select-icon
+      class="top-left-selector"
+      [items]="itemsLeft"
+      [itemSelected]="chatInteractionService.baseKnowledgeSelected"
+      (selectedItemEvent)="onSelectedLeft($event)"
+      [disabled]="disabled || itemsLeft?.length === 1"
+      idField="left-selector">
+    </app-select-icon>
+  }
+
+  @if (viewCenter) {
+    <app-select-icon
+      class="top-center-selector fadeIn"
+      [items]="itemsCenter"
+      [itemSelected]="valueDefaultCenter || itemsCenter?.length === 1"
+      (selectedItemEvent)="onSelectedCenter($event)"
+      idField="center-selector">
+    </app-select-icon>
+  }
+
+  @if (viewRight) {
+    <app-select-icon
+      class="top-right-selector"
+      [items]="itemsRight"
+      [itemSelected]="chatInteractionService.modelSelected"
+      (selectedItemEvent)="onSelectedRight($event)"
+      idField="right-selector"
+      [disabled]="!isEnabledRight || itemsRight?.length === 1">
+    </app-select-icon>
+  }
+</div>

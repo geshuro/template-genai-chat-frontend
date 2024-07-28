@@ -1,0 +1,110 @@
+@if (message.feedback === 'bad' && message.activeFeedback === 1) {
+  <div
+    [id]="'container-feedback-' + message.questionAndAnswers?.idAssistant"
+    class="feedback-content-container">
+    <div class="feedback-header-text">
+      <span class="subtitle-1-feedback"
+        >{{ 'QUESTION_FEEDBACK' | translate }}
+      </span>
+      <!-- <span class="body-1-feedback variant-color">{{
+        'QUESTION_FEEDBACK_OPTIONAL' | translate
+      }}</span> -->
+    </div>
+    <br />
+    <!-- <mat-chip-listbox
+      (change)="selectedBadChip($event, message)"
+      selectable
+      [attr.aria-label]="'QUESTION_FEEDBACK' | translate">
+      <mat-chip-option
+        value="incorrect_data"
+        [selected]="message.preselectComment?.includes('incorrect_data')">
+        {{ 'CHIP_FEEDBACK_1' | translate }}
+      </mat-chip-option>
+      <mat-chip-option
+        value="incomplete_data"
+        [selected]="message.preselectComment?.includes('incomplete_data')"
+        >{{ 'CHIP_FEEDBACK_2' | translate }}
+      </mat-chip-option>
+
+      <mat-chip-option
+        value="other"
+        [selected]="message.preselectComment?.includes('other')"
+        >{{ 'CHIP_FEEDBACK_3' | translate }}</mat-chip-option
+      >
+    </mat-chip-listbox> -->
+    <br />
+    <div class="textarea_wrapper">
+      <mat-form-field class="w-100 feedback-textarea">
+        <mat-label>{{ 'INPUT_LABEL_FEEDBACK' | translate }}</mat-label>
+        <textarea
+          class="font-regular"
+          maxlength="4000"
+          rows="2"
+          matInput
+          [(ngModel)]="message.badComment"></textarea>
+        @if (message.badComment?.length && message.badComment!.length >= 4000) {
+          <span class="warning">{{
+            'WARNING_MAXLEGTH_FEEDBACK' | translate
+          }}</span>
+        }
+      </mat-form-field>
+    </div>
+
+    <!---->
+    <div class="submit-button-container">
+      <button
+        mat-button
+        class="sendNegativeFeedback"
+        (click)="closesaveAndSendFeedback(message, false)"
+        [disabled]="
+          !message.badComment && message.preselectComment?.length === 0
+        ">
+        {{ 'BUTTON_SEND_FEEDBACK' | translate }}
+      </button>
+    </div>
+    <!---->
+
+    <div class="submit-button-container">
+      <a
+        href="https://latamrhhelp.zendesk.com/hc/es/requests/new"
+        mat-button
+        class="external-zendesk-link"
+        target="_blank"
+        rel="noopener">
+        <mat-icon class="mat-icon notranslate">link</mat-icon>
+        {{ 'BUTTON_TKT_ZENDESK' | translate }}
+      </a>
+    </div>
+
+    <button
+      aria-label="Cerrar"
+      mat-icon-button
+      class="close-feedback-button"
+      (click)="closesaveAndSendFeedback(message, true)">
+      <mat-icon class="mat-icon notranslate mat-icon-no-color">close</mat-icon>
+    </button>
+  </div>
+}
+
+@if (message.feedback === 'bad' && message.activeFeedback === 2) {
+  <div class="feedback-content-container">
+    {{ 'RESPONDE_FEEDBACK_THANKS' | translate }}
+    <button
+      mat-button
+      class="editNegativeFeedback"
+      (click)="message.activeFeedback = 1">
+      {{ 'EDIT_COMMENTS_FEEDBACK' | translate }}
+    </button>
+  </div>
+}
+
+@if (message.feedback === 'bad' && message.activeFeedback === 0) {
+  <div class="feedback-content-container">
+    <button
+      mat-button
+      class="editNegativeFeedback"
+      (click)="message.activeFeedback = 1">
+      {{ 'ADD_COMMENTS_FEEDBACK' | translate }}
+    </button>
+  </div>
+}

@@ -1,0 +1,191 @@
+@import '../../../../assets/styles/base/typography';
+
+#header-container {
+  position: absolute;
+  width: 100%;
+}
+
+.close-button {
+  position: absolute;
+  right: 48px;
+  top: 65px;
+}
+
+#main-container {
+  background-color: var(--color-background-primary);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  #main-wrapper {
+    background-color: var(--color-background-secondary);
+    border-radius: 15px;
+    padding: 2% 4% 0 4%;
+    margin: 0 2% 0;
+    width: 88%;
+    height: 85vh;
+    overflow-y: hidden;
+
+    #title-container {
+      display: flex;
+      align-items: center;
+
+      i {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 10px;
+
+        &.icon-updates {
+          content: var(--icon-report-header);
+        }
+      }
+
+      .main-title {
+        margin: 0 0 0 10px;
+        font-size: 1.75rem;
+        font-weight: 600;
+        color: var(--color-text-messages);
+      }
+    }
+
+    #form-container {
+      margin: 20px auto;
+      // width: 80%;
+      background-color: var(--color-background-terciary);
+      padding: 40px;
+      border-radius: 15px;
+      color: var(--color-text-messages) !important;
+      height: 80%;
+      overflow-y: scroll;
+
+      .form-subtitle,
+      .form-title {
+        text-align: center;
+      }
+
+      .form-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      .form-subtitle {
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 0 auto 20px;
+        max-width: 80%;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+
+        mat-form-field {
+          span.error {
+            color: rgb(187, 0, 0);
+          }
+        }
+
+        #file-container {
+          width: 100%;
+          display: flex;
+          margin: 10px 0 30px;
+
+          button {
+            background-color: var(--color-background-secondary) !important;
+            color: var(--color-button-text-primary) !important;
+          }
+
+          .file-name {
+            margin: 0 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-text-messages);
+            padding: 8px 2px;
+          }
+
+          .clearFile {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #ed1650 !important;
+            border: none;
+
+            .mat-icon {
+              font-size: 18px;
+              width: 18px;
+              height: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+
+      #form-response {
+        padding: 20px;
+        border-radius: 10px;
+        margin: 50px auto 20px;
+        background-color: rgba(256, 256, 256, 0.4);
+        text-align: center;
+
+        i {
+          display: block;
+          width: 50px;
+          height: 50px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          margin: 10px auto;
+
+          &.icon-sent-report {
+            background-image: url(../../../../assets/pics/icon-sent-report.png);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #form-container {
+    padding: 20px !important;
+  }
+  .main-title {
+    font-size: 1rem !important;
+  }
+  .close-button {
+    position: absolute;
+    right: 10px;
+    top: 65px;
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  border-top-color: #000000;
+  animation: spinner 0.8s linear infinite;
+}

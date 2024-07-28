@@ -1,0 +1,41 @@
+@import '../../../../assets/styles/base/typography';
+
+.subtitle {
+  @extend .font-regular;
+  color: var(--color-text);
+  font-size: 16px;
+  text-align: center;
+}
+
+#modes-list {
+  button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    flex-direction: column;
+    margin: 20px auto;
+    .logo {
+      width: 50px;
+      height: auto;
+      object-fit: contain;
+    }
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      span {
+        color: var(--color-text);
+      }
+      .title {
+        @extend .font-bold;
+        font-size: 16px;
+      }
+      .subtitle {
+        @extend .font-light;
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+@import '../../../../assets/styles/base/typography';
+
+.containerBox {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 50%;
+  height: 140px;
+  // align-items: center;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 4px 10px 0px #2d34ce26;
+  }
+  &.yellow {
+    background-color: #ffe999;
+  }
+  &.purple {
+    background-color: #c8cef8;
+  }
+  &.red {
+    background-color: #ffe1e9;
+  }
+  &.pink {
+    background-color: #f3ebff;
+  }
+  &.transparent {
+    background-color: transparent;
+  }
+
+  div {
+    .title-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 10px;
+      .icon-circle {
+        height: 47px;
+        width: 47px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+          height: 25px;
+          width: 18px;
+          background-position: center;
+          background-size: contain;
+          background-repeat: no-repeat;
+          &.yellow {
+            background-image: url('/assets/icons/icon-yellow-example.png');
+          }
+          &.purple {
+            background-image: url('/assets/icons/icon-purple-example.png');
+          }
+          &.red {
+            background-image: url('/assets/icons/icon-red-example.png');
+          }
+          &.pink {
+            background-image: url('/assets/icons/icon-pink-example.png');
+          }
+        }
+      }
+
+      .title {
+        font-size: 0.85rem;
+        margin-bottom: 5px;
+        line-height: 20px;
+        font-family: 'LATAM Sans Bold', sans-serif !important;
+        color: var(--color-text);
+      }
+    }
+  }
+
+  .description {
+    font-size: 0.75rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: var(--color-text);
+    text-align: center;
+    @extend .font-regular;
+  }
+}
+
+:host.chatlibre-theme {
+  background: linear-gradient(160deg, #1b0088, #870968, #e8114c) border-box;
+  padding: 1px;
+  border-radius: 10px;
+  .containerBox {
+    &:hover {
+      box-shadow: 0px 3px 6px 0px var(--shadow-card-prompt-example);
+    }
+    &.yellow {
+      background: var(--mat-sidenav-content-background-color);
+    }
+    &.purple {
+      background: var(--mat-sidenav-content-background-color);
+    }
+    &.red {
+      background: var(--mat-sidenav-content-background-color);
+    }
+    &.pink {
+      background: var(--mat-sidenav-content-background-color);
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .containerBox {
+    min-width: 200px;
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "query_category": "Ejemplo 1",
+    "user": "Dame una lista de los combustibles para aviones"
+  },
+  {
+    "query_category": "Ejemplo 2",
+    "user": "Redacta un descriptor de cargo con los conocimientos y skills para un desarrollador backend para mi squad enfocado al desarrollo web en Angular"
+  },
+  {
+    "query_category": "Ejemplo 3",
+    "user": "Haz un reporte técnico de dos paginas que de un resumen de las siguientes tecnologías:- Jira- Confluence- Google Workspace- Zendesk"
+  },
+  {
+    "query_category": "Ejemplo 4",
+    "user": "Necesito un código python para hacer una clase que administre mi base de datos SQL en Google Cloud SQL"
+  }
+]
