@@ -1,1 +1,0 @@
-# Latam Development Guidelines
